@@ -4,8 +4,8 @@ const CustomLink = (props) => {
 
   // 检查链接
   const url =
-    to.startsWith("http://home.15641300.xyz") ||
-    to.startsWith("https://blog.15641300.xyz") ||
+    to.startsWith("http://") ||
+    to.startsWith("https://") ||
     to.startsWith("mailto")
       ? to
       : `//${to}`;
